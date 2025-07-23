@@ -15,16 +15,12 @@ WORKDIR /workspace
 RUN apt-get update && apt-get install -y \
     git \
     cmake \
-    libomp-dev \
+    libeigen3-dev \
     libboost-all-dev \
-    libmetis-dev \
-    libfmt-dev \
     libspdlog-dev \
-    libglm-dev \
     libglfw3-dev \
     libpng-dev \
     libjpeg-dev \
-    libeigen3-dev \
     libopencv-dev \
     && rm -rf /var/lib/apt/lists/*
 
@@ -42,7 +38,7 @@ RUN git clone https://github.com/borglab/gtsam.git && \
     make -j$(nproc) && \
     make install
 
-# Install Iridescence for visualization
+# Install Iridescence
 RUN git clone https://github.com/koide3/iridescence --recursive && \
     cd iridescence && \
     mkdir build && \
