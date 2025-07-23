@@ -44,8 +44,8 @@
   */
   "sensors": {
     // IMU config
-    "imu_acc_noise": 0.0017,   // Accelerometer white noise stddev [m/s^2/sqrt(Hz)]
-    "imu_gyro_noise": 0.0017,  // Gyroscope white noise stddev [rad/s/sqrt(Hz)]
+    "imu_acc_noise": 0.01,
+    "imu_gyro_noise": 0.05,
     "imu_int_noise": 0.0,
     "imu_bias_noise": 1e-5,
     // LiDAR config

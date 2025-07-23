@@ -13,6 +13,7 @@
   // isam2_relinearize_skip         :
   // isam2_relinearize_thresh       :
   */
+
   "odometry_estimation": {
     "so_name": "libodometry_estimation_ct.so",
     // ivox params
@@ -31,5 +32,6 @@
     "isam2_relinearize_thresh": 0.1,
     // Misc
     "num_threads": 4
+    
   }
 }
