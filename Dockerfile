@@ -127,5 +127,6 @@ CMD ["tail", "-f", "/dev/null"]
 
 # Commands for testing
 # xhost +local:
+# docker compose up --build
 # docker exec -it glim_container bash
 # ros2 run glim_ros glim_rosbag ros_bags/

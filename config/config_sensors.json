@@ -44,21 +44,13 @@
   */
   "sensors": {
     // IMU config
-    "imu_acc_noise": 0.05,
-    "imu_gyro_noise": 0.02,
-    "imu_int_noise": 0.001,
+    "imu_acc_noise": 0.01,
+    "imu_gyro_noise": 0.05,
+    "imu_int_noise": 0.0,
     "imu_bias_noise": 1e-5,
     // LiDAR config
     "global_shutter_lidar": false,
-    "T_lidar_imu": [
-      0.006,
-      -0.012,
-      0.008,
-      0.0,
-      0.0,
-      0.0,
-      1.0
-    ],
+    "T_lidar_imu": [0, 0, 0, 0, 0, 0, 1],
     "intensity_field": "intensity",
     "ring_field": "",
     // LiDAR per-point time settings
